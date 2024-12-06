@@ -1,0 +1,155 @@
+html {
+  width: 100%;
+}
+
+body {
+  background-color: #000c29;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+}
+
+.logo {
+  font-family: "Inria Serif", serif;
+  font-size: 25px;
+}
+
+.navbar-button {
+  background: linear-gradient(to right bottom, #004597, #512dbb, #eb00ff);
+}
+
+.navbar-nav li {
+  font-size: 17px;
+}
+
+nav {
+  background-color: #020202;
+}
+
+.nav li {
+  padding-inline: 10px;
+}
+
+.banner {
+  background-image: url(/images/banner\ image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 991px) {
+  .about-content {
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .ser {
+    margin-block: 19px;
+  }
+
+  .margin {
+    margin-block: 19px;
+  }
+}
+
+.hello {
+  animation-delay: 0.5s;
+}
+
+.select {
+  animation-delay: 1s;
+}
+
+.lorem {
+  animation-delay: 1.5s;
+}
+
+.banner-button {
+  animation-delay: 2s;
+}
+
+@media (max-width: 768px) {
+  .form-input {
+    margin-block: 14px;
+  }
+}
+
+.custome-bg-color {
+  background-color: #514e76;
+  color: white;
+  border: 1px solid transparent;
+  padding-block: 10px;
+}
+
+.custome-bg-color:focus {
+  background-color: #514e76;
+  outline: 0;
+}
+
+.custome-bg-color::placeholder {
+  color: white;
+  /* opacity: 1; */
+}
+
+select {
+  cursor: pointer;
+}
+
+.fb {
+  background: linear-gradient(#004597, #512dbb, #eb00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 20px;
+  /* border: 1px solid darkblue; */
+  animation: fb 2s linear infinite;
+}
+
+@keyframes fb {
+  50% {
+    box-shadow: 0 0 15px #eb00ff;
+  }
+}
+
+.footer {
+  background-color: #000017;
+  padding-block: 20px;
+}
+
+.box {
+  -border: 1px solid red;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 5px;
+  border-radius: 50%;
+  background-color: #514e76;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.up-box {
+  -border: 1px solid red;
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 768px) {
+  .custom-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-block: 10px;
+  }
+}
+
+.ser {
+  /* border: 1px solid red; */
+  transition: 1s;
+}
+
+.ser:hover {
+  transform: translateY(-10px);
+}
